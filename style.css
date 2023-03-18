@@ -1,0 +1,155 @@
+		body {
+			background: linear-gradient(to bottom, #008cff, #005b99);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			color: #FFFFFF;
+			font-family: 'Press Start 2P', sans-serif;
+			font-size: 18px;
+			font-weight: normal;
+		}
+		h1 {
+			font-size: 24px;
+			text-align: center;
+			text-shadow: 2px 2px #333;
+		}
+		.menu {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		.menu-item {
+			border: 1px solid #FFFFFF;
+			border-radius: 4px;
+			padding: 20px;
+			margin: 20px;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		.menu-item:hover {
+			transform: scale(1.1);
+			box-shadow: 0px 0px 20px #FFFFFF;
+		}
+		.menu-item h2 {
+			font-size: 22px;
+			margin-bottom: 10px;
+			line-height: 1.2;
+			text-shadow: 2px 2px #333;
+		}
+		.menu-item p {
+			font-size: 14px;
+			margin-top: 10px;
+			line-height: 1.2;
+			  text-shadow: 2px 2px #333;
+		}
+		.menu-item img {
+			width: 80px;
+			height: 80px;
+			margin-bottom: 10px;
+		}
+		.profile-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin-bottom: 50px;
+		}
+
+		.profile-picture {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px black;
+		}
+
+		.profile-username {
+		margin-top: 16px;
+		font-size: 1.5em;
+		font-weight: bold;
+		}
+
+		.profile-description {
+		margin-top: 10px;
+		font-size: 0.9em;
+		text-align: center;
+		}
+
+		.profile-buttons {
+		margin-top: 10px;
+		}
+
+		.profile-buttons button {
+		font-family: 'Press Start 2P', sans-serif;
+		margin: 10px 10px;
+		padding: 10px 20px;
+		font-size: 0.8em;
+		border: solid;
+		border-radius: 4px;
+		/*box-shadow: 0px 0px 5px black;*/
+		cursor: pointer;
+		}
+
+		.profile-buttons button.profile-edit-button {
+		background-color: #FFFFFF;
+		color: #0082ea;
+		border-color: #fff;
+		}
+
+		.profile-buttons button.profile-message-button {
+		background-color: #0082ea;
+		border-color: #ffffff;
+		color: #ffffff;
+		}
+
+		.card {
+	  display: inline-block;
+	  width:  72px;
+	  height: 72px;
+	  margin: 10px;
+	  background-color: rgba(255, 255, 255, 0.2);
+	  border-radius: 10px;
+	  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.3);
+	  transition: all 0.3s ease-in-out;
+	}
+
+	.card:hover {
+	  transform: translateY(-5px);
+	  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.3);
+	}
+
+	.card img {
+	  display: flex;
+	  margin: 8px auto;
+	  width:  32px;
+	  height: 32px;
+	  justify-content: center;
+  	align-items: center;
+
+	}
+
+	.card span {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 2px 2px #333;
+}
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.5;
+}
