@@ -48,3 +48,15 @@
 				soundIcon.textContent = "Sound Off";
 			}
 		});
+
+	function openDonateModal() {
+	document.getElementById('donate-modal').style.display = 'block';
+	}
+
+	function closeDonateModal() {
+		document.getElementById('donate-modal').style.display = 'none';
+	}
+
+	function sendMessage() {
+		window.location.href = "mailto:seuemail@exemplo.com";
+	}

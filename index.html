@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Hub me</title>
-	 <link rel="icon" type="image/x-icon" href="assets/13.png">
+	<link rel="icon" type="image/x-icon" href="assets/13.png">
 	<link rel="stylesheet" href="style.css">
 	<span id="sound-icon" class="sound-icon">Sound On</span>
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -43,72 +43,77 @@
     <path fill="#00f5d4" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
 </svg>
 
-
-	
-	<div class="profile-section">
-		<img class="profile-picture" src="assets/profile.jpg" alt="Profile Picture">
-		<h1 class="profile-username">@bena13</h1>
-		<!--<p class="profile-description">569 seguidores</p>-->
-		<div class="cards">
+<div class="profile-section">
+	<img class="profile-picture" src="assets/profile.jpg" alt="Profile Picture">
+	<h1 class="profile-username">@bena13</h1>
+	<p class="profile-description">Product Designer</p>
+	<div class="cards">
 	    <div class="card">
-		  <img src="assets/icons/Instagram.png" alt="icon">
-		  <span>1.5M</span>
+			<a href="https://www.linkedin.com/in/bernardo-polido-08598815b/" target="_blank">
+				<img src="assets/icons/Linkedin.png" alt="LinkedIn">
+				<span>LinkedIn</span>
+			</a>
 		</div>
 		<div class="card">
-		  <img src="assets/icons/TikTok.png" alt="icon">
-		  <span>609K</span>
+			<a href="https://www.youtube.com/@bena013tv" target="_blank">
+				<img src="assets/icons/Youtube.png" alt="YouTube">
+				<span>YouTube</span>
+			</a>
 		</div>
 		<div class="card">
-		  <img src="assets/icons/Twitter.png" alt="icon">
-		  <span>1.2M</span>
+			<a href="https://www.instagram.com/bernardo.polido/" target="_blank">
+				<img src="assets/icons/Instagram.png" alt="Instagram">
+				<span>Instagram</span>
+			</a>
 		</div>
 		<div class="card">
-		  <img src="assets/icons/Twitch.png" alt="icon">
-		  <span>500</span>
+			<a href="https://www.twitch.tv/bena013" target="_blank">
+				<img src="assets/icons/Twitch.png" alt="Twitch">
+				<span>Twitch</span>
+			</a>
 		</div>
-
 	</div>
-		<div class="profile-buttons">
-		  <button class="profile-edit-button">Compartilhar</button>
-		  <button class="profile-message-button">Mensagem</button>
-		</div>
-	  </div>
-	  
-	<div class="menu">
-		<div class="menu-item">
-			<img src="assets/icons/Netflix.png"/>
-			<h2>Netflix</h2>
-			<p>Séries para maratonar.</p>
-		</div>
-		<div class="menu-item">
-			<img src="assets/icons/Youtube.png"/>
-			<h2>YouTube</h2>
-			<p>Esses videos eu indico.</p>
-		</div>
-		<div class="menu-item">
-			<img src="assets/icons/Spotify.png"/>
+
+	<div class="profile-buttons">
+		<button class="profile-edit-button" onclick="openDonateModal()">Enviar donate</button>
+		<button class="profile-message-button" onclick="sendMessage()">Mensagem</button>
+	</div>
+</div>
+
+<div class="menu">
+	<div class="menu-item">
+		<a href="https://gx.games/games/y5jh8s/as-aventuras-de-jujuba/tracks/ee02b0e9-8cb4-4308-aa8c-6abe15fe9600" target="_blank">
+			<img src="assets/icons/juju.png" alt="Jujuba">
+			<h2>Jujuba</h2>
+			<p>Clique aqui para jogar.</p>
+		</a>
+	</div>
+	<div class="menu-item">
+		<a href="https://open.spotify.com/user/xxbena13xx" target="_blank">
+			<img src="assets/icons/Spotify.png" alt="Spotify">
 			<h2>Spotify</h2>
 			<p>Ouça minhas playlists.</p>
-		</div>
-		<div class="menu-item">
-			<img src="assets/icons/Steam.png"/>
-			<h2>Steam</h2>
-			<p>Os últimos que joguei.</p>
-		</div>
-		<div class="menu-item">
-			<img src="assets/icons/Amazon.png"/>
-			<h2>Amazon</h2>
-			<p>Minhas últimas compras.</p>
-		</div>
-		<div class="menu-item">
-			<img src="assets/icons/AirBnB.png"/>
-			<h2>Airbnb</h2>
-			<p>Só lugar top. Vem ver.</p>
-		</div>
-
+		</a>
 	</div>
+	<div class="menu-item">
+		<a href="https://steamcommunity.com/id/bena13/" target="_blank">
+			<img src="assets/icons/Steam.png" alt="Steam">
+			<h2>Steam</h2>
+			<p>Vamos jogar juntos?</p>
+		</a>
+	</div>
+</div>
 
-	 <script src="js.js"></script> 
-   
+<!-- Modal Donate -->
+<div id="donate-modal" class="modal">
+	<div class="modal-content">
+		<span class="close" onclick="closeDonateModal()">&times;</span>
+		<img src="assets/donate-image.png" alt="Donate">
+		<p style="color: #333;">Obrigado pelo seu apoio! Sua contribuição faz a diferença.</p>
+	</div>
+</div>
+
+<script src="js.js"></script> 
+
 </body>
 </html>
